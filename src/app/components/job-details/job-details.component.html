@@ -1,0 +1,21 @@
+@if(jobDetails$ | async; as jobDetails) {
+  <div class="job-details-header">
+    <img [src]="jobDetails.companyLogo" alt="{{ jobDetails.companyName }}" />
+    <div>
+      <h2>
+        {{ jobDetails.title }}
+      </h2>
+      @for (type of jobDetails.types; track type) {
+      <span class="category">{{ type }}</span>
+      } @for (industry of jobDetails.industries; track industry) {
+      <span class="category" [innerHTML]="industry"></span>
+      }
+    </div>
+  </div>
+  <div class="job-details-content">
+    <div><strong>Publish Date:</strong> {{ jobDetails.publishDate }}</div>
+    <div><strong>Location:</strong> {{ jobDetails.location }}</div>
+    <div><strong>Reference:</strong> {{ jobDetails.reference }}</div>
+    <div><strong>Description:</strong><span [innerHTML]="jobDetails.description"></span></div>
+  </div>
+}

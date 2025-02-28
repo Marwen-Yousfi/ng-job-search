@@ -1,0 +1,37 @@
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #3b4252;
+}
+
+.tabs {
+    display: flex !important;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    flex: 50%;
+    background-color: #E5E7EB;
+    color: #3b4252;
+    margin: 0;
+}
+
+.tabs button.active {
+    font-weight: bold;
+    background: #3b4252;
+    color: white;
+}
+
+.tabs button:hover {
+    font-weight: bold;
+}
+
+.tabs button:not(.active):hover {
+    background-color: #dee0e4;
+}

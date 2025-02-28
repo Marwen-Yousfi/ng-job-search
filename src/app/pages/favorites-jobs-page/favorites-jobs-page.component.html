@@ -1,0 +1,8 @@
+
+@if (favoritesJobs().length > 0) {
+      @for (favorite of favoritesJobs(); track favorite.id) {
+            <app-job [job]="favorite"/>
+      }
+  } @else {
+    <p>No favorite selected</p>
+  }

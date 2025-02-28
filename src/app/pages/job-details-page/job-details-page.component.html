@@ -1,0 +1,5 @@
+<button routerLink="/jobs" class="btn-back">Back</button>
+@if (JobId$ | async; as jobId) {
+    <app-job-details [jobId]="jobId"></app-job-details>
+  }
+  

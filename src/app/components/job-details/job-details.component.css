@@ -1,0 +1,16 @@
+.job-details-header {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 100px;
+    }
+}
+
+.category {
+    background-color: #6182aa;
+    border-radius: 20px;
+    padding: 0 15px;
+    color: white;
+    margin-left: 10px;
+}

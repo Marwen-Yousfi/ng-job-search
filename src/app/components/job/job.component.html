@@ -1,0 +1,16 @@
+@if (job) {
+<div class="job-container">
+  <div class="job-logo">
+    <img [src]="job.companyLogo" alt="{{ job.companyName }}" />
+  </div>
+  <div class="job-info">
+    <h2>
+      <a [routerLink]="['/jobs', job.id]" class="job-title-link">
+        {{ job.title }}
+      </a>
+   </h2> 
+    <span>Company: {{ job.companyName }}</span>
+    <span>Reference: {{ job.reference }}</span>
+  </div>
+</div>
+}
